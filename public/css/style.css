@@ -1,0 +1,392 @@
+/* ########## BOOTSTRAP OVERRIDES ########## */
+/* ############### FONTS IMPORT ############### */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-image: url("../img/main-bg.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h5 {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.label-primary{
+    color: #F5B019;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #F5B019;
+    border-color: #F5B019;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f36c25;
+    border-color: #f36c25;
+}
+
+.list-menu-mb li{
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,.125);
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* ########## NAVBAR ########## */
+
+.main-nav > .nav {
+    border: 1px solid #3e4145;
+    background: rgba(255,255,255,0.1);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.main-nav a{
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-nav a:hover, .main-nav a.active{
+    color: #E8E8E8 !important;
+}
+
+.main-nav a.active {
+    text-decoration-line: underline;
+    text-decoration-color:#f5b019;
+    text-decoration-thickness: 3px;
+    color: #f5b019 !important;
+    padding-bottom: 5px;
+    text-underline-offset: 6px;
+}
+
+.main-nav a.active:before { content: "\00a0"; }
+
+.main-nav a.active:after { content: "\00a0"; }
+
+.main-nav a:hover {
+    opacity: 0.75;
+}
+
+.text-subtitle {
+    color: #88888A;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.header-phone{
+    color: #F5B019;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-phone:hover {
+    color: #F5B019;
+    opacity: 0.75;
+}
+
+.btn.header-order {
+    border: 2px solid #F5B019;
+    color: #F5B019;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-footer {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    color: white !important;
+}
+
+.nav-footer li {
+    margin-bottom: 10px;
+}
+
+.nav-footer li a {
+    color: #868686;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-footer li a.active {
+    color: white !important;
+}
+
+/* ########## SLIDER ############# */
+
+#main-slider {
+    background-image: url("../img/bg-bottom-slide.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+}
+
+/* ########## NAV PILLS ########## */
+
+.nav-pills-ab .nav-link {
+    color: white;
+    font-weight: bold;
+    padding: .5rem 3rem;
+}
+
+.nav-pills-ab .nav-link.active{
+    background-color: transparent;
+    border: 2px solid #F5B019;
+    color: #F5B019;
+}
+
+.nav-pills-ab .nav-link:hover:not(.active) {
+    color: #E8E8E8;
+    opacity: 0.75;
+}
+
+/* ########## CARD ########## */
+
+.card {
+    background-color: rgba(255,255,255,0.11);
+}
+
+.card-title, .card-text, .card-price{
+    text-align: center;
+}
+
+.card-title, .card-price {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-text {
+    font-weight: 500;
+}
+
+.card .btn-toolbar {
+    justify-content: space-between;
+}
+
+.card .btn-toolbar .btn-group{
+    flex: 1 1 0px;
+    margin-right: 0rem !important;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.card .btn-group .btn{
+    color: #212121;
+    font-weight: bold;
+    background-color: #E8E8E8;
+    border-radius: 0 !important;
+    font-size: 1.5rem;
+}
+
+.card .btn-group .btn.active{
+    color: #FFFFFF;
+    background-color: #F47622;
+}
+
+.card .btn-group .btn:hover{
+    opacity: 0.75;
+}
+
+.al-promotion-price {
+    position: relative;
+    min-height: 80px;
+    background-image: url("../img/promo-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+}
+
+.al-promotion-price span{
+    position: absolute;
+    top: 25px;
+}
+
+/* ########## FORM ########## */
+
+form label {
+    font-weight: 600;
+}
+
+form input {
+    background-color: rgba(136, 136, 136, .19) !important;
+    color: white !important;
+}
+
+form textarea {
+    background-color: rgba(136, 136, 136, .19) !important;
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .w-xs-100 {
+        width: 100% !important;
+    }
+
+    .w-xs-75 {
+        width: 75% !important;
+    }
+
+    .w-xs-50 {
+        width: 50% !important;
+    }
+
+    .w-xs-25 {
+        width: 25% !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
+    .w-sm-75 {
+        width: 75% !important;
+    }
+
+    .w-sm-50 {
+        width: 50% !important;
+    }
+
+    .w-sm-25 {
+        width: 25% !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .w-md-100 {
+        width: 100% !important;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .w-md-50 {
+        width: 50% !important;
+    }
+
+    .w-md-25 {
+        width: 25% !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .w-lg-100 {
+        width: 100% !important;
+    }
+
+    .w-lg-75 {
+        width: 75% !important;
+    }
+
+    .w-lg-50 {
+        width: 50% !important;
+    }
+
+    .w-lg-25 {
+        width: 25% !important;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .w-xl-100 {
+        width: 100% !important;
+    }
+
+    .w-xl-75 {
+        width: 75% !important;
+    }
+
+    .w-xl-50 {
+        width: 50% !important;
+    }
+
+    .w-xl-25 {
+        width: 25% !important;
+    }
+
+}
+
+
+
+.car-col-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.car-col-1 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.car-col-3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.car-col-4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+.car-col-5 {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+}
+
+.car-col-6 {
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
+}
